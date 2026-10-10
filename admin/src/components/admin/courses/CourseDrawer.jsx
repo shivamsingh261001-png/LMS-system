@@ -21,7 +21,7 @@ const DEFAULT_TEACHERS = [
   { id: 5, name: 'Katrina Kaif' }
 ];
 
-const CourseDrawer = ({ isOpen, onClose, onSave, courseToEdit }) => {
+ 
 const CourseDrawer = ({ isOpen, onClose, onSave, courseToEdit, teachers = [], categories = [] }) => {
   const panelRef = useFocusTrap(isOpen, onClose);
   const [form, setForm] = useState({
